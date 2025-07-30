@@ -1,0 +1,24 @@
+{
+  "name": "villageproblemsolver",
+  "version": "1.0.0",
+  "description": "An app to help solve cases and keep data for cases in villages, for easy tracking.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WabukoWabuko/VillageProblemSolver.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WabukoWabuko/VillageProblemSolver/issues"
+  },
+  "homepage": "https://github.com/WabukoWabuko/VillageProblemSolver#readme",
+  "devDependencies": {
+    "electron": "^37.2.4"
+  }
+}
