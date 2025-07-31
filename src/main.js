@@ -3,17 +3,21 @@ const path = require('path');
 
 function createWindow() {
   const win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1024,
+    height: 768,
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
     },
   });
   win.loadFile('public/index.html');
+  win.setMenuBarVisibility(false); // VSCode-like UI
 }
 
-app.whenReady().then(createWindow);
+app.whenReady().then(() => {
+  createWindow();
+  require('./server/index'); // Start Express server
+});
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
